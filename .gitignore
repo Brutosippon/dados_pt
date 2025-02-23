@@ -1,0 +1,8 @@
+.venv
+venv
+*.pyc
+staticfiles
+.env
+env
+.DS_Store
+getting-started/*
