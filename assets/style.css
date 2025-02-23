@@ -1,0 +1,134 @@
+/* /assets/style.css*/
+hr {
+    border-top: 2px solid rgb(0, 0, 0);
+}
+
+.dropdown-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Use 2 columns for a list-like appearance */
+    gap: 10px;
+    max-width: 1200px; /* Limit width to prevent stretching in full-screen */
+    margin: 0 auto; /* Center the container */
+}
+
+.dropdown-button {
+    width: 100%;
+    margin-top: 5px;
+}
+
+.tabs-group {
+    padding-top: 20px;
+}
+
+.app-div {
+    padding: 10px;
+    background-color: #0a0a0a; /* Ensure black background for the app div */
+}
+
+.data-table-div {
+    margin: auto;
+    padding: 10px;
+}
+
+.budget-label {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff !important; /* White text for readability on black background */
+}
+
+.budget-text {
+    font-size: 20px;
+}
+
+.budget-text-value {
+    font-size: 20px;
+    font-style: italic;
+}
+
+.budget-progress-bar {
+    height: 20px;
+}
+
+.budget-tooltip {
+    font-size: 18px;
+}
+
+.checklist {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+/* Remove or modify the media query to maintain the grid layout */
+@media (max-width: 800px) {
+    .dropdown-container {
+        grid-template-columns: repeat(1, 1fr); /* Keep as a single column on small screens if needed, or remove this to maintain 2 columns */
+    }
+}
+
+nav .navbar-brand {
+    /* size for brand */
+    font-size: xx-large;
+    /*background-color: #000000;*/
+}
+
+/* Colors for brand */
+nav .navbar-brand .blue {
+    color: #537fbe;
+}
+
+nav .navbar-brand .red {
+    color: #ea433b;
+}
+
+nav .navbar-brand .yellow {
+    color: #f5b82e;
+}
+
+nav .navbar-brand .green {
+    color: #2e944b;
+}
+
+nav .navbar-brand .black {
+    color: #000000;
+}
+
+.black {
+    background-color: #0a0a0a !important;
+}
+
+nav .navbar-brand .white {
+    color: #ffffff;
+}
+
+main .form-control {
+    /* Center form controls */
+    display: inline-block;
+
+    /* Override Bootstrap's 100% width for form controls */
+    width: auto;
+}
+
+main {
+    /* Scroll horizontally as needed */
+    overflow-x: auto;
+
+    /* Center contents */
+    text-align: center;
+    background-color: #0a0a0a; /* Ensure black background for main content */
+}
+
+/* Ensure the body and html have a black background to cover the viewport */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #0a0a0a !important;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+main img {
+    /* Constrain images on small screens */
+    max-width: 100%;
+}
